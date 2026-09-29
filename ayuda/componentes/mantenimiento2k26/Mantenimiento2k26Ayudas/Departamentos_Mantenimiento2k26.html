@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="Css/style.css" rel="stylesheet" type="text/css">
+    <title>Ayudas - Departamentos</title>
+</head>
+
+<body>
+    <br>
+    <center>
+        <img class="imgLogo" src="Imagenes/LogoYMascota/logo.png">
+        <img class="imgButti" src="Imagenes/LogoYMascota/5.png">
+        <h1>Ayudas - Departamentos</h1>
+    </center>
+    <br>
+    <div class="container">
+        <h2>Departamentos</h2>
+        <p> Esta es la ventana de mantenimiento de departamentos (código 2016), que se abre desde el menú de Seguridad con el botón
+            "Departamentos". Utiliza el componente Navegador para ingresar, consultar, modificar y eliminar departamentos. Cada
+            acción queda registrada en la Bitácora de Seguridad con el usuario que la realizó.
+        </p>
+        <img class="imgVentana" src="Imagenes/Departamentos/Departamentos_resumen.png">
+        <br><br><br>
+
+        <h2>Campos</h2>
+        <p> Código del departamento: máximo 5 caracteres, es la llave primaria y no se puede repetir (ej. D001).<br>
+            Nombre del departamento: máximo 80 caracteres (ej. Ventas).<br>
+            Estatus del departamento: 1 carácter, A = Activo, I = Inactivo.
+        </p>
+        <br>
+
+        <h2>Ingresar</h2>
+        <p> Abre el panel de captura con los campos vacíos. Llene el código, el nombre y el estatus del departamento y presione
+            "Guardar" para registrarlo o "Cancelar" para descartarlo. Al guardar aparece un mensaje de confirmación y la tabla se actualiza.
+        </p>
+        <br>
+
+        <h2>Consultar</h2>
+        <p> Abre la ventana de consultas donde puede buscar un departamento por su código. Al seleccionarlo, la tabla muestra
+            únicamente ese registro; desde ahí puede modificarlo o eliminarlo.
+        </p>
+        <br>
+
+        <h2>Modificar</h2>
+        <p> Seleccione un departamento en la tabla y presione este botón. Se abre el panel con sus datos; el código no se puede
+            cambiar. Cambie el nombre o el estatus y presione "Guardar".
+        </p>
+        <br>
+
+        <h2>Eliminar</h2>
+        <p> Seleccione un departamento en la tabla y presione este botón. El sistema pide confirmación y, si acepta, el registro
+            se elimina y la tabla se actualiza.
+        </p>
+        <br>
+
+        <h2>Reporte</h2>
+        <p> El botón "Reporte", arriba del Navegador, muestra dentro de la misma ventana el reporte formal de todos los
+            departamentos registrados, con la opción de exportarlo a Word, Excel o PDF o imprimirlo. Al presionar "Ocultar reporte"
+            se vuelve a la vista del Navegador. La generación del reporte queda registrada en la Bitácora.
+        </p>
+        <br>
+
+        <h2>Extras</h2>
+        <p> 1. Refrescar: vuelve a cargar todos los departamentos desde la base de datos. </p>
+        <p> 2. Inicio, Anterior, Siguiente y Fin: permiten moverse entre los registros de la tabla. </p>
+        <p> 3. Salir: oculta la tabla y deja solo la barra de botones del Navegador. </p>
+        <p> 4. Los botones aparecen deshabilitados si el perfil del usuario no tiene permiso para esa acción. </p>
+        <br><br>
+    </div>
+</body>
+
+</html>

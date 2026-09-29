@@ -1,0 +1,19 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Mantenimiento2k26Ayudas.chm
+Contents file=Mantenimiento2k26Ayudas.hhc
+Default Window=Mantenimiento2k26Ayudas
+Default topic=Departamentos_Mantenimiento2k26.html
+Display compile progress=No
+Language=0x100a Spanish (Guatemala)
+Title=Ayudas - Mantenimiento2k26
+
+[WINDOWS]
+Mantenimiento2k26Ayudas="Ayudas del Mantenimiento2k26","Mantenimiento2k26Ayudas.hhc",,"Departamentos_Mantenimiento2k26.html","Departamentos_Mantenimiento2k26.html",,,,,0x23520,,0xc387e,,,,,,,,0
+
+[FILES]
+Departamentos_Mantenimiento2k26.html
+Css/style.css
+Imagenes/LogoYMascota/logo.png
+Imagenes/LogoYMascota/5.png
+Imagenes/Departamentos/Departamentos_resumen.png
