@@ -1,0 +1,239 @@
+/* Estilo simple basado en los colores de Terminus y del Navegador. */
+body {
+    margin: 0;
+    color: #222222;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* HTML Help puede utilizar un modo antiguo de Internet Explorer. */
+header,
+nav,
+main,
+section,
+figure,
+figcaption,
+footer {
+    display: block;
+}
+
+.contenedor {
+    width: 92%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.encabezado {
+    padding: 15px 0;
+    border-bottom: 4px solid #7b50e8;
+}
+
+.encabezado .contenedor {
+    min-height: 75px;
+}
+
+.logo {
+    float: right;
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+}
+
+.encabezado h1 {
+    margin: 8px 0 3px;
+    color: #7b50e8;
+    font-size: 25px;
+}
+
+.encabezado p {
+    margin: 0;
+}
+
+.menu {
+    padding: 8px 0;
+    background: #f2edff;
+    border-bottom: 1px solid #7b50e8;
+}
+
+.menu a {
+    display: inline-block;
+    margin-right: 12px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a.activo {
+    color: #006fbd;
+    text-decoration: underline;
+}
+
+main {
+    padding: 18px 0 25px;
+}
+
+.tema {
+    margin-bottom: 28px;
+}
+
+.tema p {
+    margin: 8px 0 12px;
+}
+
+.introduccion {
+    margin-bottom: 22px;
+    font-size: 16px;
+}
+
+.pasos {
+    padding-left: 25px;
+}
+
+.referencia-codigo {
+    margin: 10px 0 15px;
+    padding: 8px 10px;
+    background: #f5f5f5;
+    border-left: 4px solid #006fbd;
+}
+
+.referencia-codigo code {
+    display: block;
+    margin-top: 4px;
+}
+
+.estado-actual {
+    margin: 14px 0;
+    padding: 10px;
+    background: #fff8e5;
+    border-left: 4px solid #d69b00;
+}
+
+h2 {
+    margin-top: 22px;
+    color: #7b50e8;
+    font-size: 20px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+.nota {
+    margin: 15px 0;
+    padding: 10px;
+    background: #f2edff;
+    border-left: 4px solid #7b50e8;
+}
+
+.advertencia {
+    margin: 15px 0;
+    padding: 10px;
+    background: #fff1f0;
+    border-left: 4px solid #c0392b;
+}
+
+pre {
+    overflow: auto;
+    margin: 12px 0;
+    padding: 12px;
+    color: #202020;
+    background: #f5f5f5;
+    border: 1px solid #cccccc;
+    white-space: pre-wrap;
+}
+
+table {
+    width: 100%;
+    margin: 12px 0 18px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #b9b9b9;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    color: #ffffff;
+    background: #6c45cf;
+}
+
+tr:nth-child(even) td {
+    background: #faf8ff;
+}
+
+.checklist {
+    padding-left: 24px;
+}
+
+.checklist li {
+    list-style-type: square;
+}
+
+.imagen-manual {
+    margin: 18px 0;
+    text-align: center;
+}
+
+.imagen-manual img {
+    display: block;
+    max-width: 75%;
+    max-height: 480px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #aaaaaa;
+    -ms-interpolation-mode: bicubic;
+}
+
+.imagen-manual figcaption {
+    margin-top: 6px;
+    color: #555555;
+    font-size: 13px;
+}
+
+.ubicacion-codigo {
+    margin: 18px 0;
+    padding: 12px;
+    background: #f5f5f5;
+    border: 1px solid #bbbbbb;
+    text-align: center;
+}
+
+.ubicacion-codigo strong,
+.ubicacion-codigo span {
+    display: block;
+}
+
+.navegacion-paginas {
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: 1px solid #bbbbbb;
+}
+
+.navegacion-paginas a {
+    margin-right: 15px;
+    color: #006fbd;
+}
+
+.pie {
+    padding: 10px 0;
+    color: #555555;
+    border-top: 1px solid #7b50e8;
+    text-align: center;
+}
+.alerta {
+    margin: 15px 0;
+    padding: 12px;
+    border-left: 5px solid #b42318;
+    background: #fff1f0;
+    color: #7a271a;
+}
