@@ -1,0 +1,23 @@
+commit 78a15cb43f6877a036166c4e89747e5bc7f4200b
+Author: 4lexPRDS <alex56paredes@gmail.com>
+Date:   Tue Sep 29 10:27:54 2026 -0600
+
+    Mantenimiento2k26: CRUD departamento con Navegador, bitacora, reporte y ayuda
+
+commit 20e2635aff50d1ddaa4dfc092f1f987dc336d07e
+Author: 4lexPRDS <alex56paredes@gmail.com>
+Date:   Tue Sep 29 10:26:16 2026 -0600
+
+    Script de base de datos: tabla departamento, perfil2p2k26b y usuario examen2p2k26b
+
+commit 09c914bc936a71f534d186db4c688e073b58ecb1
+Author: Esduardo Del Aguila <daguilae@yahoo.com>
+Date:   Mon Sep 28 18:43:48 2026 -0600
+
+    Inicial proyecto
+
+commit f414c498afdbaf970217efd1012204fbe9379647
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Mon Sep 28 18:41:50 2026 -0600
+
+    Initial commit
