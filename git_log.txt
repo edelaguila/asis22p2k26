@@ -1,0 +1,3 @@
+* da46c32 (HEAD -> main, origin/main, origin/HEAD) Parcial_2
+* 09c914b Inicial proyecto
+* f414c49 Initial commit
