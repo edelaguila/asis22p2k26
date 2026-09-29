@@ -535,5 +535,10 @@ namespace CapaVista_Seguridad
             FrmReporteMantenimientoEmpleado reporte = new FrmReporteMantenimientoEmpleado();
             reporte.Show();
         }
+
+        private void SeguridadLblTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

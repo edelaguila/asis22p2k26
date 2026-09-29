@@ -178,6 +178,7 @@ namespace CapaVista_Seguridad
             this.SeguridadLblTitulo.Size = new System.Drawing.Size(400, 35);
             this.SeguridadLblTitulo.TabIndex = 1;
             this.SeguridadLblTitulo.Text = "Mantenimiento Empleado";
+            this.SeguridadLblTitulo.Click += new System.EventHandler(this.SeguridadLblTitulo_Click);
             // 
             // SeguridadPbIconoComponente
             // 
