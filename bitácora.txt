@@ -1,0 +1,7 @@
+commit 4c6e0152ecadaac22e315a34f48d76c044875bc2
+Author: VictorSamayoa <josuesamayoa064@gmail.com>
+Date:   Tue Sep 29 10:25:39 2026 -0600
+
+    SubiendoExamen
+
+

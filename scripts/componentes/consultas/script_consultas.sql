@@ -1,0 +1,14 @@
+CREATE DATABASE dbConsulta;
+USE dbConsulta;
+
+CREATE TABLE tblConsulta (
+    Pk_Consulta INT AUTO_INCREMENT PRIMARY KEY,
+    nombreConsulta VARCHAR(100) NOT NULL,
+    aplicacionConsulta VARCHAR(30) NOT NULL,
+    queryConsulta TEXT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+        ON UPDATE CURRENT_TIMESTAMP
+);
+
+

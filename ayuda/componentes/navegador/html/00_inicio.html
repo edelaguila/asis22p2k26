@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Inicio - Ayuda Navegador</title><link rel="stylesheet" href="../css/estilos.css"></head><body>
+<header class="encabezado"><div class="contenedor"><img class="logo" src="../imagenes/logo_navegador.jpg" alt="Logo Navegador"><h1>Ayuda del componente Navegador</h1><p>Guía práctica para instalar, adaptar y usar el CRUD en Windows Forms.</p></div></header>
+<nav class="menu"><div class="contenedor"><a class="activo" href="00_inicio.html">Inicio</a><a href="01_requisitos_compilar.html">Compilar</a><a href="02_conexion.html">Conexión</a><a href="03_integrar.html">Integrar</a><a href="04_configurar_tabla.html">Configurar</a><a href="05_ejecutar.html">Ejecutar</a><a href="06_crud.html">CRUD</a><a href="07_botones.html">Botones</a><a href="08_errores.html">Errores</a></div></nav>
+<main class="contenedor"><p class="introduccion">El Navegador es un <code>UserControl</code> reutilizable. Se coloca dentro de un formulario normal, recibe el nombre de una tabla y los identificadores de Seguridad, lee el esquema de la base de datos y construye la cuadrícula y los campos para insertar, consultar, modificar y eliminar.</p>
+<section class="tema"><h2>Ruta recomendada</h2><ol class="pasos"><li>Revise los requisitos y ajuste las dos rutas del archivo <code>build_navegador.bat</code>.</li><li>Configure en Windows el DSN ODBC de 64 bits y seleccione en él la base de datos.</li><li>Ejecute el archivo de compilación y confirme que no haya errores en el resumen.</li><li>Agregue <code>CapaVista_Navegador.dll</code> a la caja de herramientas y arrastre el control al formulario.</li><li>Configure tabla, módulo y aplicación con una sola llamada.</li><li>Inicie sesión desde Seguridad y abra el formulario integrado.</li></ol></section>
+<section class="tema"><h2>Configuración mínima</h2><pre><code>public FrmMiMantenimiento()
+{
+    InitializeComponent();
+    navegador1.NavegadorMetConfigurar("tblempleado", 4, 5);
+}</code></pre><p>El formulario <strong>no hereda</strong> de una clase especial. <code>navegador1</code> es la instancia colocada desde el diseñador.</p></section>
+<section class="tema"><h2>Antes de empezar</h2><div class="advertencia"><strong>No coloque contraseñas en el código del Navegador.</strong> El componente usa el DSN y la sesión del componente Seguridad. Los permisos de Ingresar, Modificar, Eliminar e Imprimir se calculan con el módulo y la aplicación configurados.</div><p>Si solo necesita resolver un fallo, vaya a <a href="08_errores.html">Diagnóstico y errores frecuentes</a>.</p></section></main>
+<footer class="pie"><div class="contenedor">Componente Navegador - ayuda técnica y de usuario</div></footer></body></html>
