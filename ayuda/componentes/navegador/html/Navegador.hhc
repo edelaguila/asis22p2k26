@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+    <param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+    <LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Introducci&oacute;n y preparaci&oacute;n">
+        <param name="ImageNumber" value="1">
+        </OBJECT>
+    <UL>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Inicio y ruta recomendada">
+            <param name="Local" value="/html/00_inicio.html">
+            </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Requisitos y compilaci&oacute;n">
+            <param name="Local" value="/html/01_requisitos_compilar.html">
+            </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Conexi&oacute;n, DSN y base de datos">
+            <param name="Local" value="/html/02_conexion.html">
+            </OBJECT>
+    </UL>
+    <LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Integraci&oacute;n y configuraci&oacute;n">
+        <param name="ImageNumber" value="1">
+        </OBJECT>
+    <UL>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Agregar el control al formulario">
+            <param name="Local" value="/html/03_integrar.html">
+            </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Tabla, permisos y MDI de Seguridad">
+            <param name="Local" value="/html/04_configurar_tabla.html">
+            </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Ejecutar y probar">
+            <param name="Local" value="/html/05_ejecutar.html">
+            </OBJECT>
+    </UL>
+    <LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Uso del Navegador">
+        <param name="ImageNumber" value="1">
+        </OBJECT>
+    <UL>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Operaciones del CRUD">
+            <param name="Local" value="/html/06_crud.html">
+            </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Botones y permisos">
+            <param name="Local" value="/html/07_botones.html">
+            </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Diagn&oacute;stico y errores">
+            <param name="Local" value="/html/08_errores.html">
+            </OBJECT>
+    </UL>
+</UL>
+</BODY></HTML>

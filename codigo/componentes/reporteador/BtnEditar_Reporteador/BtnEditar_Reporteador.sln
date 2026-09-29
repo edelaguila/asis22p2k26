@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37516.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControlador_BtnEditar_Reporteador", "CapaControlador_BtnEditar_Reporteador\CapaControlador_BtnEditar_Reporteador.csproj", "{9C6EA8F0-A645-44E4-8550-27FFFD1933D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModelo_BtnEditar_Reporteador", "CapaModelo_BtnEditar_Reporteador\CapaModelo_BtnEditar_Reporteador.csproj", "{ADF5FEDD-0852-4804-96D0-DBCA1634AC72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVista_BtnEditar_Reporteador", "CapaVista_BtnEditar_Reporteador\CapaVista_BtnEditar_Reporteador.csproj", "{76789F1F-22D8-4668-85B1-3260277E2771}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C6EA8F0-A645-44E4-8550-27FFFD1933D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6EA8F0-A645-44E4-8550-27FFFD1933D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6EA8F0-A645-44E4-8550-27FFFD1933D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6EA8F0-A645-44E4-8550-27FFFD1933D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF5FEDD-0852-4804-96D0-DBCA1634AC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF5FEDD-0852-4804-96D0-DBCA1634AC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF5FEDD-0852-4804-96D0-DBCA1634AC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF5FEDD-0852-4804-96D0-DBCA1634AC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76789F1F-22D8-4668-85B1-3260277E2771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76789F1F-22D8-4668-85B1-3260277E2771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76789F1F-22D8-4668-85B1-3260277E2771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76789F1F-22D8-4668-85B1-3260277E2771}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9365EBC-0FCA-4C21-8911-1BE43AAB27A9}
+	EndGlobalSection
+EndGlobal
