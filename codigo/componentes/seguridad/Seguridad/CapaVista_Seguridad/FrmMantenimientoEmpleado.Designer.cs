@@ -178,7 +178,6 @@ namespace CapaVista_Seguridad
             this.SeguridadLblTitulo.Size = new System.Drawing.Size(400, 35);
             this.SeguridadLblTitulo.TabIndex = 1;
             this.SeguridadLblTitulo.Text = "Mantenimiento Empleado";
-            this.SeguridadLblTitulo.Click += new System.EventHandler(this.SeguridadLblTitulo_Click);
             // 
             // SeguridadPbIconoComponente
             // 
@@ -226,6 +225,7 @@ namespace CapaVista_Seguridad
             this.SeguridadFlpToolbar.Size = new System.Drawing.Size(1347, 84);
             this.SeguridadFlpToolbar.TabIndex = 0;
             this.SeguridadFlpToolbar.WrapContents = false;
+            this.SeguridadFlpToolbar.Paint += new System.Windows.Forms.PaintEventHandler(this.SeguridadFlpToolbar_Paint);
             // 
             // SeguridadBtnAgregar
             // 

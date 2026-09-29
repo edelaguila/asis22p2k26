@@ -536,7 +536,7 @@ namespace CapaVista_Seguridad
             reporte.Show();
         }
 
-        private void SeguridadLblTitulo_Click(object sender, EventArgs e)
+        private void SeguridadFlpToolbar_Paint(object sender, PaintEventArgs e)
         {
 
         }

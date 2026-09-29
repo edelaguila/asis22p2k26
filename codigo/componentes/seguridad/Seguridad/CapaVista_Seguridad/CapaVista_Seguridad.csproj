@@ -119,6 +119,12 @@
     <Compile Include="FrmMantenimientoModulo.Designer.cs">
       <DependentUpon>FrmMantenimientoModulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frmmantenimientotipopuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmmantenimientotipopuesto.Designer.cs">
+      <DependentUpon>Frmmantenimientotipopuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNavegador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoModulo.resx">
       <DependentUpon>FrmMantenimientoModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmmantenimientotipopuesto.resx">
+      <DependentUpon>Frmmantenimientotipopuesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNavegador.resx">
       <DependentUpon>FrmNavegador.cs</DependentUpon>

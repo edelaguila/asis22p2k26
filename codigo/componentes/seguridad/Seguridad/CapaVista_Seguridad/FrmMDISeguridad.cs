@@ -45,7 +45,7 @@ namespace CapaVista_Seguridad
         {
             InitializeComponent();
             this.Load += FrmMDISeguridad_Load;
-            
+
         }
 
         //---------------------------------------------------------------------**INICIO ANDRE Y EVELYN
@@ -71,7 +71,8 @@ namespace CapaVista_Seguridad
 
             var MapaBotonesMDI = new Dictionary<Control, (int, int)>
             {
-                { SeguridadBtnEmpleados,(4, 4)},
+                // CAMBIO: el botón Empleados ahora abre Tipo de Puesto (aplicación 13)
+                { SeguridadBtnEmpleados,(4, 13)},
                 { SeguridadBtnUsuarios,(4, 5)},
                 { SeguridadBtnModulos,(4, 6)},
                 { SeguridadBtnAplicaciones,(4, 7)},
@@ -239,17 +240,23 @@ namespace CapaVista_Seguridad
             Modulo.ShowDialog();
         }
 
+        // CAMBIO: este botón (antes Empleados) ahora abre Mantenimiento Tipo de Puesto
         private void SeguridadBtnEmpleados_Click(object sender, EventArgs e)
         {
-         //   if (!ClsSeguridadFormHelper.SeguridadMetTieneAcceso(IdModulo: 4, IdAplicacion: 4))
-         //   {
-          //      MessageBox.Show("No tienes acceso a este módulo.",
-          //          "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-           //     return;
-         //   }
+            if (!ClsSeguridadFormHelper.SeguridadMetTieneAcceso(IdModulo: 4, IdAplicacion: 13))
+            {
+                MessageBox.Show("No tienes acceso a este módulo.",
+                    "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            FrmMantenimientoTipoPuesto TipoPuesto = new FrmMantenimientoTipoPuesto();
+            TipoPuesto.ShowDialog();
+
+            /* Código original (abría el navegador de Empleados):
             FrmNavegador Empleados = new FrmNavegador();
             Empleados.ShowDialog();
+            */
         }
 
         private void SeguridadBtnAplicaciones_Click(object sender, EventArgs e)
@@ -304,6 +311,11 @@ namespace CapaVista_Seguridad
         private void SeguridadBtnAyudas_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "C:/SeguridadAyudas/SeguridadAyudas.chm", "MDI_Seguridad.html");
+        }
+
+        private void SeguridadPbButti_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
