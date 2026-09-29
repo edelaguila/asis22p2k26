@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37628.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mantenimiento2k26_Ejecucion", "Mantenimiento2k26_Ejecucion\Mantenimiento2k26_Ejecucion.csproj", "{DE90192E-D59D-4188-9AFF-2122CEEA7C51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE90192E-D59D-4188-9AFF-2122CEEA7C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE90192E-D59D-4188-9AFF-2122CEEA7C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE90192E-D59D-4188-9AFF-2122CEEA7C51}.Debug|x86.ActiveCfg = Debug|x86
+		{DE90192E-D59D-4188-9AFF-2122CEEA7C51}.Debug|x86.Build.0 = Debug|x86
+		{DE90192E-D59D-4188-9AFF-2122CEEA7C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE90192E-D59D-4188-9AFF-2122CEEA7C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE90192E-D59D-4188-9AFF-2122CEEA7C51}.Release|x86.ActiveCfg = Release|x86
+		{DE90192E-D59D-4188-9AFF-2122CEEA7C51}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B6BF82A-D783-45B9-AA02-E3CC203D36A1}
+	EndGlobalSection
+EndGlobal
