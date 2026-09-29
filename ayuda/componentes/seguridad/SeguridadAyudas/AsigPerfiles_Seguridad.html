@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Ayudas - AsigPerf</title>
+</head>
+
+<body>
+    <br>
+    <center>
+        <img class="imgLogo" src="Imagenes/LogoYMascota/logo.png">
+        <img class="imgButti" src="Imagenes/LogoYMascota/5.png">
+        <h1>Ayudas - Asignación de Perfiles</h1>
+    </center>
+    <br>
+    <div class="container">
+        <h2>Descripción general</h2>
+        <p> El módulo de Asignación de Perfiles es parte del componente de Seguridad del sistema, desarrollado para Embutidos de Calidad S.A.
+            Permite consultar los perfiles que tiene asignados cada usuario y asignarle nuevos perfiles. Esto es de vital importancia, ya que
+            el perfil de un usuario determina a qué aplicaciones podrá acceder y qué acciones podrá realizar dentro de ellas.
+        </p>
+        <img class="imgVentanaMDI" src="Imagenes/AsigPerfUsu/AsigPerfUsu%20-%20inicio.png">
+        <br><br><br>
+
+        <h2>¿Cómo funciona la ventana?</h2>
+        <br>
+        <p> La ventana se divide en dos paneles, cada uno con una función distinta:
+        </p>
+        <p> 1. Panel izquierdo, Consulta de Perfiles a Usuarios; permite ver qué perfiles tiene asignados un usuario. Contiene el combo de Usuarios, el botón Consultar,
+            el botón Cancelar y una tabla donde se muestran el perfil y la fecha de asignación de cada uno, junto con un botón Quitar por cada fila.
+        </p>
+        <p> 2. Panel derecho, Asignación de Perfiles a Usuarios; permite asignar nuevos perfiles. Contiene los combos de Usuarios y Perfiles, el botón AGREGAR,
+            una tabla con las asignaciones pendientes (usuario, perfil y botón Quitar), el botón Cancelar y el botón ASIGNAR, que es el que guarda las asignaciones.
+        </p>
+        <br><br><br>
+
+        <h2>¿Cómo consultar los perfiles de un usuario?</h2>
+        <br>
+        <p> A continuación se detallan los pasos:
+        </p>
+        <p> 1. En el panel izquierdo, despliegue el combo Usuarios.
+        </p>
+        <p> 2. Seleccione el usuario que desea consultar.
+        </p>
+        <p> 3. La tabla mostrará todos los perfiles que tiene asignados ese usuario, junto con la fecha en que le fueron asignados.
+        </p>
+        <img class="imgVentana" src="Imagenes/AsigPerfUsu/AsigPerfUsu%20-%20consultar.png">
+        <br><br><br>
+
+        <h2>¿Cómo asignar un perfil a un usuario?</h2>
+        <br>
+        <p> A continuación se detallan los pasos:
+        </p>
+        <p> 1. En el panel derecho, seleccione el usuario en el combo Usuarios.
+        </p>
+        <p> 2. Seleccione el perfil que desea asignarle en el combo Perfiles.
+        </p>
+        <img class="imgVentana" src="Imagenes/AsigPerfUsu/AsigPerfUsu%20-%20seleccionar.png">
+        <br>
+        <p> 3. Presione el botón AGREGAR. La asignación aparecerá en la tabla de asignaciones pendientes. Puede repetir los pasos
+            anteriores para agregar más asignaciones antes de guardar.
+        </p>
+        <p> 4. Si se equivocó en alguna fila, presione el botón Quitar de esa fila para removerla de la tabla de pendientes.
+        </p>
+        <img class="imgVentana" src="Imagenes/AsigPerfUsu/AsigPerfUsu%20-%20agregar.png">
+        <br><br><br>
+
+        <h2>¿Cómo guardar las asignaciones?</h2>
+        <br>
+        <p> Las asignaciones que aparecen en la tabla de pendientes todavía no están guardadas. Para guardarlas, presione el botón ASIGNAR.
+            El sistema mostrará una ventana de información indicando cuántas asignaciones se guardaron correctamente.
+        </p>
+        <p> Si alguna asignación no se puede guardar, la ventana detallará el error. Por ejemplo, si el perfil ya está asignado a ese usuario,
+            el sistema lo indicará y no volverá a registrarlo.
+        </p>
+        <img class="imgVentana" src="Imagenes/AsigPerfUsu/AsigPerfUsu%20-%20Notificar.png">
+        <br><br><br>
+
+        <h2>¿Cómo quitar un perfil asignado?</h2>
+        <br>
+        <p> A continuación se detallan los pasos:
+        </p>
+        <p> 1. En el panel izquierdo, seleccione el usuario para mostrar sus perfiles asignados.
+        </p>
+        <p> 2. Presione el botón Quitar de la fila del perfil que desea remover.
+        </p>
+        <img class="imgVentana" src="Imagenes/AsigPerfUsu/AsigPerfUsu%20-%20quitar.png">
+        <br>
+        <p> 3. El sistema solicitará una confirmación antes de proceder. Presione Sí para quitar el perfil al usuario o No para cancelar la acción.
+        </p>
+        <img class="imgVentana" src="Imagenes/AsigPerfUsu/AsigPerfUsu%20-%20notificar2.png">
+        <br><br><br>
+
+        <h2>Botón Cancelar</h2>
+        <br>
+        <p> Cada panel cuenta con su propio botón Cancelar, que permite descartar la operación en curso y limpiar los datos de ese panel para empezar de nuevo.
+        </p>
+    </div>
+</body>
+</html>

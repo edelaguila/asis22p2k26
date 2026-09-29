@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <title>Filtros - Ayuda</title>
+
+    <style>
+        .tabla-ayuda {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 18px 0 24px;
+        }
+
+        .tabla-ayuda th {
+            background: #2E4A63;
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .tabla-ayuda td {
+            border: 1px solid #d8d0c2;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .tabla-ayuda tr:nth-child(even) td {
+            background: #f7f3eb;
+        }
+
+        .nota {
+            background: #EDE7DA;
+            border-left: 5px solid #C4573F;
+            padding: 12px 14px;
+            margin: 16px 0;
+        }
+
+        .captura {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="encabezado">
+        <img class="logo" src="img/LogoConsultas.png" alt="Consultas">
+        <h1>Capacitación - Consultas</h1>
+        <p class="subtitulo">Aplicación de condiciones a una consulta</p>
+    </div>
+
+    <div class="container">
+
+        <div class="seccion">
+            <h2>Aplicación de filtros</h2>
+            <p>
+                Los filtros permiten limitar los resultados de acuerdo con un campo, un operador
+                y un valor determinado. Cuando se utilicen varias condiciones, estas pueden
+                relacionarse mediante operadores lógicos como AND u OR.
+            </p>
+
+            <img class="captura" src="img/FiltrosConsultas.png" alt="Filtros de consultas">
+
+            <h2>Elementos de un filtro</h2>
+            <p>
+                Para crear una condición, seleccione el <strong>campo</strong> que desea revisar,
+                elija un <strong>operador</strong> y escriba el <strong>valor</strong> con el que
+                se comparará. Por ejemplo: <strong>Edad &gt; 30</strong> busca registros cuya
+                edad sea mayor que 30.
+            </p>
+
+            <h2>Operadores de comparación</h2>
+            <p>
+                Los operadores disponibles dependen del tipo de campo seleccionado.
+                La siguiente tabla explica qué hace cada uno:
+            </p>
+
+            <table class="tabla-ayuda">
+                <thead>
+                    <tr>
+                        <th>Operador</th>
+                        <th>Qué hace</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Igual a (=)</strong></td>
+                        <td>Busca valores que coinciden con el valor indicado.</td>
+                        <td>Edad = 30: muestra registros con edad 30.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diferente de (&lt;&gt;)</strong></td>
+                        <td>Busca valores que no coinciden con el valor indicado.</td>
+                        <td>Estado &lt;&gt; Inactivo: excluye los registros con ese estado.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mayor que (&gt;)</strong></td>
+                        <td>Busca valores superiores al indicado, sin incluirlo.</td>
+                        <td>Edad &gt; 30: muestra edades mayores de 30.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mayor o igual que (&gt;=)</strong></td>
+                        <td>Busca valores iguales o superiores al indicado.</td>
+                        <td>Edad &gt;= 30: incluye la edad 30 y las mayores.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Menor que (&lt;)</strong></td>
+                        <td>Busca valores inferiores al indicado, sin incluirlo.</td>
+                        <td>Edad &lt; 30: muestra edades menores de 30.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Menor o igual que (&lt;=)</strong></td>
+                        <td>Busca valores iguales o inferiores al indicado.</td>
+                        <td>Edad &lt;= 30: incluye la edad 30 y las menores.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contiene</strong></td>
+                        <td>Busca el texto indicado en cualquier parte del campo.</td>
+                        <td>Nombre contiene «ana»: puede encontrar «Ana» y «Mariana».</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Empieza con</strong></td>
+                        <td>Busca valores que comienzan con el texto indicado.</td>
+                        <td>Nombre empieza con «Mar»: puede encontrar «María» y «Marcos».</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Termina con</strong></td>
+                        <td>Busca valores que finalizan con el texto indicado.</td>
+                        <td>Apellido termina con «ez»: puede encontrar «López» y «Pérez».</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Operadores lógicos</h2>
+            <p>
+                Cuando la consulta tiene más de una condición, AND y OR determinan cómo
+                se combinan los filtros:
+            </p>
+
+            <table class="tabla-ayuda">
+                <thead>
+                    <tr>
+                        <th>Operador</th>
+                        <th>Qué hace</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>AND (Y)</strong></td>
+                        <td>El registro debe cumplir ambas condiciones.</td>
+                        <td>Edad &gt; 30 <strong>AND</strong> Estado = Activo: muestra únicamente registros activos con edad mayor de 30.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OR (O)</strong></td>
+                        <td>El registro debe cumplir al menos una de las condiciones.</td>
+                        <td>Estado = Activo <strong>OR</strong> Estado = Pendiente: muestra registros activos o pendientes.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="nota">
+                <strong>Fechas:</strong> escriba la fecha en el formato solicitado por la pantalla.
+                «Mayor que» busca fechas posteriores y «menor que» busca fechas anteriores.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

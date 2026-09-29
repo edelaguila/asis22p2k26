@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Reporteador">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="General">
+			<param name="Local" value="Ayuda_General\Ayuda_General_Reporteador.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Funcionalidad">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ver Reporte">
+			<param name="Local" value="AyudaBtn_VerReporte\VerReporte.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ruta">
+			<param name="Local" value="AyudaBtn_Ruta\AyudaBtn_Ruta.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Guardar">
+			<param name="Local" value="AyudaBtn_Guardar\AyudaBtn_Guardar.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Actualizar">
+			<param name="Local" value="AyudaBtn_Actualizar\Actualizar.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Buscar">
+			<param name="Local" value="AyudaBtn_Buscar\AyudaBtn_Buscar.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Eliminar">
+			<param name="Local" value="AyudaBtn_Eliminar\AyudaBtn_Eliminar.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Limpiar">
+			<param name="Local" value="AyudaBtn_Limpiar\AyudaBtn_Limpiar.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

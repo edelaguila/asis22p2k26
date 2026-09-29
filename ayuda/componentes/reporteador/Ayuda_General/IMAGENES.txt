@@ -1,0 +1,19 @@
+IMÁGENES UTILIZADAS
+
+portada.png           Portada general del Reporteador
+pantalla_general.png  Vista completa del módulo
+ruta_explorador.png   Explorador abierto para seleccionar RDLC
+ruta_seleccion.png    Archivo RDLC seleccionado
+ruta_resultado.png    Ruta cargada en el formulario
+guardar_campos.png    Ruta y nombre completos
+guardar_exito.png     Mensaje de guardado exitoso
+guardar_resultado.png Resultado después de guardar
+modificar.png         Botón Modificar resaltado
+editar_flujo.png      Área principal usada para modificar
+eliminar.png          Botón Eliminar resaltado
+limpiar.png           Botón Limpiar Reporte resaltado
+imprimir.png          Botón Imprimir resaltado
+filtro_nombre.png     Ejemplo de búsqueda por nombre
+filtro_fecha.png      Ejemplo de búsqueda por fecha
+filtro_combinado.png  Ejemplo de filtros combinados
+refrescar.png         Botón Refrescar resaltado

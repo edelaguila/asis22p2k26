@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7AD1A78-73BD-4D8F-87D1-1C5B495D1160}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaVista_Seguridad</RootNamespace>
+    <AssemblyName>CapaVista_Seguridad</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaControlador_Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CapaControlador_Seguridad\bin\Debug\CapaControlador_Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVista_Navegador">
+      <HintPath>..\..\..\navegador\Navegador\CapaVista_Navegador\bin\Debug\CapaVista_Navegador.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ayudas\ClsSeguridadFormHelper.cs" />
+    <Compile Include="Ayudas\ClsValidacionDatos.cs" />
+    <Compile Include="FrmAsignacionAplicacionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsignacionAplicacionUsuario.Designer.cs">
+      <DependentUpon>FrmAsignacionAplicacionUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsignacionAppPerf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsignacionAppPerf.Designer.cs">
+      <DependentUpon>FrmAsignacionAppPerf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsignacionPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsignacionPerfiles.Designer.cs">
+      <DependentUpon>FrmAsignacionPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBitacora.Designer.cs">
+      <DependentUpon>FrmBitacora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoAplicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoAplicacion.Designer.cs">
+      <DependentUpon>FrmMantenimientoAplicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoEmpleado.Designer.cs">
+      <DependentUpon>FrmMantenimientoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoPerfiles.Designer.cs">
+      <DependentUpon>FrmMantenimientoPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoModulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoModulo.Designer.cs">
+      <DependentUpon>FrmMantenimientoModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNavegador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNavegador.Designer.cs">
+      <DependentUpon>FrmNavegador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecuperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecuperacion.Designer.cs">
+      <DependentUpon>FrmRecuperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteAsigAppPerf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteAsigAppPerf.Designer.cs">
+      <DependentUpon>FrmReporteAsigAppPerf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteAsignacionAplicacionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteAsignacionAplicacionUsuario.Designer.cs">
+      <DependentUpon>FrmReporteAsignacionAplicacionUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteAsignacionPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteAsignacionPerfiles.Designer.cs">
+      <DependentUpon>FrmReporteAsignacionPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteBitacora.Designer.cs">
+      <DependentUpon>FrmReporteBitacora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoAplicacioncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoAplicacioncs.Designer.cs">
+      <DependentUpon>FrmReporteMantenimientoAplicacioncs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoEmpleado.Designer.cs">
+      <DependentUpon>FrmReporteMantenimientoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoPerfiles.Designer.cs">
+      <DependentUpon>FrmReporteMantenimientoPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoModulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoModulo.Designer.cs">
+      <DependentUpon>FrmReporteMantenimientoModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes\FrmReporteMantenimientoUsuario.Designer.cs">
+      <DependentUpon>FrmReporteMantenimientoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientoUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientoUsuarios.Designer.cs">
+      <DependentUpon>FrmMantenimientoUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMDISeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMDISeguridad.Designer.cs">
+      <DependentUpon>FrmMDISeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAsignacionAplicacionUsuario.resx">
+      <DependentUpon>FrmAsignacionAplicacionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsignacionAppPerf.resx">
+      <DependentUpon>FrmAsignacionAppPerf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsignacionPerfiles.resx">
+      <DependentUpon>FrmAsignacionPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBitacora.resx">
+      <DependentUpon>FrmBitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoAplicacion.resx">
+      <DependentUpon>FrmMantenimientoAplicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoEmpleado.resx">
+      <DependentUpon>FrmMantenimientoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoPerfiles.resx">
+      <DependentUpon>FrmMantenimientoPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoModulo.resx">
+      <DependentUpon>FrmMantenimientoModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNavegador.resx">
+      <DependentUpon>FrmNavegador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecuperacion.resx">
+      <DependentUpon>FrmRecuperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteAsigAppPerf.resx">
+      <DependentUpon>FrmReporteAsigAppPerf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteAsignacionAplicacionUsuario.resx">
+      <DependentUpon>FrmReporteAsignacionAplicacionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteAsignacionPerfiles.resx">
+      <DependentUpon>FrmReporteAsignacionPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteBitacora.resx">
+      <DependentUpon>FrmReporteBitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoAplicacioncs.resx">
+      <DependentUpon>FrmReporteMantenimientoAplicacioncs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoEmpleado.resx">
+      <DependentUpon>FrmReporteMantenimientoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoPerfiles.resx">
+      <DependentUpon>FrmReporteMantenimientoPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoModulo.resx">
+      <DependentUpon>FrmReporteMantenimientoModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes\FrmReporteMantenimientoUsuario.resx">
+      <DependentUpon>FrmReporteMantenimientoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientoUsuarios.resx">
+      <DependentUpon>FrmMantenimientoUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMDISeguridad.resx">
+      <DependentUpon>FrmMDISeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RpReporteAsignacionAplicacionUsuario.rdlc" />
+    <EmbeddedResource Include="Reportes\RpReporteBitacora.rdlc" />
+    <EmbeddedResource Include="Reportes\RpReporteMantenimientoEmpleado.rdlc" />
+    <EmbeddedResource Include="Reportes\RpReporteAsigAppPerf.rdlc" />
+    <EmbeddedResource Include="Reportes\RpReporteMantenimientoAplicacion.rdlc" />
+    <EmbeddedResource Include="Reportes\RpReporteMantenimientoPerfil.rdlc" />
+    <EmbeddedResource Include="Reportes\RpReporteMantenimientoModulo.rdlc" />
+    <EmbeddedResource Include="Reportes\RpReporteMantenimientoUsuario.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloAsigAppPerf1.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloAsigAppUsuario.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloAsignacionPerfiles.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloBitacora.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloCambiarContrasena.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloDashboard.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloEmpleado.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloModulo.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloRoles.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloSolicitarCodigo.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.ClsModeloUsuario.datasource" />
+    <EmbeddedResource Include="Reportes\RpReporteAsignacionPerfiles.rdlc" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.Correo.ClsEnvioCorreo.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.Correo.ClsPlantillaCorreoRecuperacion.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.Modelos_de_controladores.ClsModeloAsigUsuPerf.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.Modelos_de_controladores.ClsModeloMantenimientoApp.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.Objetos_de_valor.ClsPermisoAplicacion.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.Objetos_de_valor.ClsRolInfo.datasource" />
+    <None Include="Properties\DataSources\CapaControlador_Seguridad.Objetos_de_valor.ClsSesionSeguridad.datasource" />
+    <None Include="Resources\fondo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panel_fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btn_prf_apl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconAsignacionPerfiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_mantenimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_anteriorN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cancelarN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_consultarN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_finN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_imprimirN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_ingresarN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_inicioN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_modificarN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_refrescarN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_consultar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_fin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_refrescar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_siguienteN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoSeguridad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backUsu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo splash1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonmdi10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

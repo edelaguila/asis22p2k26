@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <title>Resultados - Ayuda</title>
+    <style>
+        .ayuda-intro { margin-bottom: 18px; }
+        .pasos { margin: 12px 0 22px 22px; line-height: 1.6; }
+        .tabla-ayuda { width: 100%; border-collapse: collapse; margin: 14px 0 24px; }
+        .tabla-ayuda th { background: #2E4A63; color: white; text-align: left; padding: 10px; }
+        .tabla-ayuda td { border: 1px solid #d8d0c2; padding: 10px; vertical-align: top; }
+        .tabla-ayuda tr:nth-child(even) td { background: #f7f3eb; }
+        .nota { background: #EDE7DA; border-left: 5px solid #C4573F; padding: 12px 14px; margin: 16px 0; }
+        .captura { max-width: 100%; height: auto; }
+    </style>
+</head>
+
+<body>
+    <div class="encabezado">
+        <img class="logo" src="img/LogoConsultas.png" alt="Consultas">
+        <h1>Capacitación - Consultas</h1>
+        <p class="subtitulo">Visualización, selección y paginación de registros</p>
+    </div>
+
+    <div class="container">
+        <div class="seccion">
+            <h2>Visualización de resultados</h2>
+
+            <p class="ayuda-intro">
+                Esta pantalla muestra en una tabla los registros obtenidos después de ejecutar una consulta.
+                Desde aquí puede revisar la información, desplazarse entre las páginas disponibles y seleccionar
+                el registro que desea devolver a la ventana anterior.
+            </p>
+
+            <img class="captura" src="img/ResultadosConsultas.png" alt="Resultados de consultas">
+
+            <h2>Cómo utilizar la pantalla</h2>
+            <ol class="pasos">
+                <li>Revise los registros mostrados en la <strong>tabla de resultados</strong>.</li>
+                <li>Si existen más registros de los que caben en una sola página, utilice
+                    <strong>Anterior</strong>, <strong>Siguiente</strong> o los <strong>números de página</strong>
+                    para desplazarse.</li>
+                <li>Localice el registro que desea utilizar.</li>
+                <li>Haga <strong>doble clic con el botón izquierdo del mouse</strong> sobre la fila correspondiente.</li>
+                <li>El sistema finalizará la selección y devolverá el valor elegido a la ventana desde la cual se abrió la consulta.</li>
+            </ol>
+
+            <h2>Controles de la pantalla</h2>
+            <table class="tabla-ayuda">
+                <thead>
+                    <tr>
+                        <th>Control</th>
+                        <th>Función</th>
+                        <th>Cómo usarlo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Tabla de resultados</strong></td>
+                        <td>Muestra los registros encontrados por la consulta.</td>
+                        <td>Revise las columnas y filas hasta identificar el registro que necesita.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fila de resultado</strong></td>
+                        <td>Representa un registro individual de la consulta.</td>
+                        <td>Haga doble clic sobre la fila que contiene la información que desea seleccionar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anterior</strong></td>
+                        <td>Muestra la página anterior de resultados.</td>
+                        <td>Úselo cuando se encuentre en la página 2 o superior y necesite regresar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Números de página</strong></td>
+                        <td>Permiten ir directamente a una página específica de resultados.</td>
+                        <td>Presione el número correspondiente a la página que desea consultar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Siguiente</strong></td>
+                        <td>Muestra la página siguiente de resultados.</td>
+                        <td>Úselo cuando todavía existan registros posteriores a la página actual.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Indicador de registros</strong></td>
+                        <td>Informa qué rango de registros se está mostrando y el total disponible.</td>
+                        <td>Consúltelo para saber en qué parte del listado se encuentra y cuántos registros existen.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="nota">
+                <strong>Importante:</strong> un solo clic permite identificar o resaltar una fila, pero para
+                confirmar la selección debe hacer <strong>doble clic</strong> sobre el registro correcto.
+                Antes de seleccionarlo, verifique que la información de la fila corresponda al dato que necesita.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
