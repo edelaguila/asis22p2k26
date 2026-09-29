@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Ayudas - Recuperación de Contraseña</title>
+</head>
+
+<body>
+    <br>
+    <center>
+        <img class="imgLogo" src="Imagenes/LogoYMascota/logo.png">
+        <img class="imgButti" src="Imagenes/LogoYMascota/8.png">
+        <h1>Ayudas - Recuperación de Contraseña</h1>
+    </center>
+    <br>
+    <div class="container">
+        <h2>Descripción General</h2>
+        <p> La ventana de Recuperación de Contraseña es parte del componente de Seguridad del sistema,
+            desarrollado para Embutidos de Calidad S.A. Su función es permitir que un usuario recupere el
+            acceso a su cuenta cuando olvidó su contraseña, sin necesidad de que un administrador intervenga.
+        <br><br>
+            Se accede desde la ventana de inicio de sesión, dando clic en el enlace "¿Olvidaste tu contraseña?".
+            El proceso se realiza en dos pasos dentro de la misma ventana: primero se solicita un código de
+            verificación por correo electrónico, y luego se utiliza ese código para definir una nueva contraseña.
+        </p>
+
+        <img class="imgVentana" src="Imagenes/Recuperacion/VentanaRecuperacion.png">
+
+        <br><br><br>
+
+        <h2>¿Cómo funciona la ventana?</h2>
+        <br>
+        <p> La ventana está dividida en dos secciones: "1. Enviar código" y "2. Verificar y Cambiar".
+            Al abrir la ventana, únicamente está habilitada la primera sección, donde se ingresa el usuario
+            y el correo electrónico. La segunda sección permanece bloqueada hasta que se envía el código
+            correctamente.
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/FuncionVentana.png">
+
+        <br><br><br>
+
+        <h2>Solicitar Código</h2>
+        <br>
+        <p> El botón Enviar código genera y envía por correo un código de verificación de 6 caracteres.
+            Los pasos para solicitarlo son los siguientes:
+                1. Ingresar el nombre de usuario en el campo Usuario.
+                2. Ingresar el correo electrónico registrado para ese usuario.
+                3. Presionar el botón "Enviar código".
+                4. Si los datos coinciden con una cuenta activa, se mostrará el mensaje "Código enviado" y se
+                habilitará la sección "2. Verificar y Cambiar".
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/SolicitarCodigo.png">
+
+        <br><br><br>
+
+        <h2>Revisar el Correo</h2>
+        <br>
+        <p> Al enviarse el código correctamente, llega un correo electrónico con el diseño institucional del
+            sistema, dirigido al usuario que solicitó el cambio. El correo incluye el código de verificación
+            de 6 caracteres y una nota indicando el tiempo de vigencia del código y qué hacer en caso de no
+            haber solicitado el cambio.
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/CorreoRecibido.png">
+
+        <br><br><br>
+
+        <h2>Verificar Código y Nueva Contraseña</h2>
+        <br>
+        <p> Una vez recibido el código, se debe completar la sección "2. Verificar y Cambiar".
+            Los pasos son los siguientes:
+                1. Ingresar el código de verificación recibido por correo.
+                2. Ingresar la nueva contraseña.
+                3. Confirmar la nueva contraseña, debe coincidir exactamente con la anterior.
+                4. Presionar el botón "Cambiar contraseña".
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/VerificarCodigo.png">
+
+        <br><br><br>
+
+        <h2>Mostrar Contraseña</h2>
+        <br>
+        <p> Junto a los campos de nueva contraseña y confirmar contraseña hay una casilla con un ícono de
+            ojo que permite mostrar u ocultar el texto capturado, para que el usuario pueda verificar que
+            escribió correctamente su nueva contraseña antes de guardarla.
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/MostrarContrasena.png">
+
+        <br><br><br>
+
+        <h2>Contraseña Actualizada</h2>
+        <br>
+        <p> Si el código es válido y las contraseñas ingresadas coinciden, el sistema actualiza la contraseña
+            del usuario y muestra el mensaje "Contraseña actualizada". Al aceptar el mensaje, la ventana
+            regresa al inicio de sesión para que el usuario pueda ingresar con su nueva contraseña.
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/ContrasenaActualizada.png">
+
+        <br><br><br>
+
+        <h2>Error: Usuario y Correo no Coinciden</h2>
+        <br>
+        <p> Si el usuario o el correo electrónico ingresados no corresponden a una cuenta activa del
+            sistema, se muestra el mensaje "El usuario y el correo no coinciden con ninguna cuenta activa"
+            y no se envía ningún código.
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/ErrorUsuarioCorreo.png">
+
+        <br><br><br>
+
+        <h2>Error: Código Inválido o Expirado</h2>
+        <br>
+        <p> Si el código ingresado no corresponde al enviado, ya fue utilizado, o su tiempo de vigencia
+            venció, se muestra el mensaje "El código es inválido o ya expiró" y no se realiza ningún cambio
+            de contraseña.
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/ErrorCodigoInvalido.png">
+
+        <br><br><br>
+
+        <h2>Error: Contraseñas no Coinciden</h2>
+        <br>
+        <p> Si la nueva contraseña y su confirmación no son exactamente iguales, se muestra el mensaje
+            "Las contraseñas no coinciden" y se debe corregir antes de poder continuar.
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/ErrorContrasenasNoCoinciden.png">
+
+        <br><br><br>
+
+        <h2>Regresar al Inicio de Sesión</h2>
+        <br>
+        <p> El enlace "Regresar al inicio de sesión" cierra la ventana de recuperación sin realizar cambios
+            y regresa a la ventana de Login, desde donde se puede iniciar sesión normalmente.
+        </p>
+        <img class="imgVentana" src="Imagenes/Recuperacion/RegresoLogin.png">
+    </div>
+</body>
+</html>

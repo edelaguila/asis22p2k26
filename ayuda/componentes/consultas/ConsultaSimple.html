@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <title>Consultas Simples - Ayuda</title>
+    <style>
+        .ayuda-intro { margin-bottom: 18px; }
+        .pasos { margin: 12px 0 22px 22px; line-height: 1.6; }
+        .tabla-ayuda { width: 100%; border-collapse: collapse; margin: 14px 0 24px; }
+        .tabla-ayuda th { background: #2E4A63; color: white; text-align: left; padding: 10px; }
+        .tabla-ayuda td { border: 1px solid #d8d0c2; padding: 10px; vertical-align: top; }
+        .tabla-ayuda tr:nth-child(even) td { background: #f7f3eb; }
+        .nota { background: #EDE7DA; border-left: 5px solid #C4573F; padding: 12px 14px; margin: 16px 0; }
+        .captura { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <img class="logo" src="img/LogoConsultas.png" alt="Consultas">
+        <h1>Capacitación - Consultas</h1>
+        <p class="subtitulo">Búsqueda rápida mediante filtros simples</p>
+    </div>
+
+    <div class="container">
+        <div class="seccion">
+            <h2>Consultas simples</h2>
+            <p class="ayuda-intro">
+                Esta pantalla permite filtrar los registros mostrados en la tabla utilizando un campo,
+                un operador y un valor. Es la opción recomendada cuando necesita realizar una búsqueda
+                rápida sin combinar varias condiciones.
+            </p>
+
+            <img class="captura" src="img/ConsultaSimple.png" alt="Pantalla de consultas simples">
+
+            <h2>Cómo realizar una búsqueda</h2>
+            <ol class="pasos">
+                <li>En <strong>Campo</strong>, seleccione la columna sobre la que desea buscar.</li>
+                <li>En <strong>Operador</strong>, seleccione la comparación que desea aplicar.</li>
+                <li>En <strong>Valor</strong>, escriba el dato que desea localizar.</li>
+                <li>Presione <strong>Buscar</strong> para aplicar el filtro.</li>
+                <li>Revise los resultados en la tabla inferior.</li>
+                <li>Si desea volver a mostrar la información sin el filtro actual, presione <strong>Refrescar</strong>.</li>
+            </ol>
+
+            <h2>¿Qué hace cada operador?</h2>
+            <p>
+                Los operadores disponibles pueden cambiar según el tipo de campo seleccionado.
+                Los campos numéricos y de fecha permiten comparar valores; los campos de texto
+                también pueden permitir búsquedas por fragmentos.
+            </p>
+
+            <table class="tabla-ayuda">
+                <thead>
+                    <tr>
+                        <th>Operador</th>
+                        <th>Qué hace</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Igual a (=)</strong></td>
+                        <td>Muestra los registros cuyo campo coincide con el valor indicado.</td>
+                        <td>Edad igual a <strong>30</strong>: muestra los registros con edad 30.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diferente de (&lt;&gt;)</strong></td>
+                        <td>Muestra los registros cuyo campo no coincide con el valor indicado.</td>
+                        <td>Estado diferente de <strong>Inactivo</strong>: excluye los registros inactivos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mayor que (&gt;)</strong></td>
+                        <td>Muestra los valores superiores al indicado, sin incluirlo.</td>
+                        <td>Edad mayor que <strong>30</strong>: muestra 31, 32, 33, etc.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mayor o igual que (&gt;=)</strong></td>
+                        <td>Muestra los valores iguales o superiores al indicado.</td>
+                        <td>Edad mayor o igual que <strong>30</strong>: incluye 30, 31, 32, etc.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Menor que (&lt;)</strong></td>
+                        <td>Muestra los valores inferiores al indicado, sin incluirlo.</td>
+                        <td>Edad menor que <strong>30</strong>: muestra 29, 28, 27, etc.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Menor o igual que (&lt;=)</strong></td>
+                        <td>Muestra los valores iguales o inferiores al indicado.</td>
+                        <td>Edad menor o igual que <strong>30</strong>: incluye 30, 29, 28, etc.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contiene</strong></td>
+                        <td>Busca el texto indicado en cualquier parte del campo.</td>
+                        <td>Nombre contiene <strong>ana</strong>: puede encontrar «Ana» y «Mariana».</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Empieza con</strong></td>
+                        <td>Busca valores que comienzan con el texto indicado.</td>
+                        <td>Nombre empieza con <strong>Mar</strong>: puede encontrar «María» y «Marcos».</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Termina con</strong></td>
+                        <td>Busca valores que finalizan con el texto indicado.</td>
+                        <td>Apellido termina con <strong>ez</strong>: puede encontrar «López» y «Pérez».</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="nota">
+                <strong>Fechas:</strong> escriba la fecha en el formato solicitado por la pantalla.
+                Los operadores «mayor que» y «menor que» permiten buscar fechas posteriores
+                o anteriores, respectivamente.
+            </div>
+
+            <h2>Botones y controles</h2>
+            <table class="tabla-ayuda">
+                <thead>
+                    <tr>
+                        <th>Botón o control</th>
+                        <th>Función</th>
+                        <th>Cómo usarlo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Campo</strong></td>
+                        <td>Indica qué columna se utilizará para realizar la búsqueda.</td>
+                        <td>Abra la lista y seleccione el campo que corresponda al dato que desea encontrar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Operador</strong></td>
+                        <td>Define la comparación que se aplicará al campo seleccionado.</td>
+                        <td>Seleccione uno de los operadores disponibles en la lista.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Valor</strong></td>
+                        <td>Contiene el dato que será comparado durante la búsqueda.</td>
+                        <td>Escriba el texto, número o fecha correspondiente al campo elegido.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Buscar</strong></td>
+                        <td>Ejecuta la búsqueda con el campo, operador y valor seleccionados.</td>
+                        <td>Complete los controles del filtro y luego presione el botón.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Refrescar</strong></td>
+                        <td>Recarga la tabla y permite volver al listado actualizado.</td>
+                        <td>Úselo para quitar el resultado de una búsqueda anterior o actualizar los datos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ayuda</strong></td>
+                        <td>Muestra este manual de uso.</td>
+                        <td>Presiónelo cuando necesite consultar las instrucciones de la pantalla.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Consultas Complejas</strong></td>
+                        <td>Abre la pantalla para trabajar con consultas guardadas o con búsquedas que requieren mayor configuración.</td>
+                        <td>Úselo cuando una consulta simple no sea suficiente para obtener la información que necesita.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Salir</strong></td>
+                        <td>Cierra la ventana actual.</td>
+                        <td>Presiónelo cuando haya terminado de trabajar.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anterior / páginas</strong></td>
+                        <td>Permiten desplazarse entre las páginas de resultados.</td>
+                        <td>Use los controles inferiores cuando la tabla contenga más registros de los que se muestran en una sola página.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="nota">
+                <strong>Consejo:</strong> si la búsqueda no devuelve resultados, revise que el campo,
+                operador y valor correspondan entre sí y luego vuelva a presionar <strong>Buscar</strong>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

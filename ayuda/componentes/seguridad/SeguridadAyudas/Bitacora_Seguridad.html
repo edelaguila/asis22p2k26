@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Ayudas - Bitácora de Seguridad</title>
+</head>
+
+<body>
+    <br>
+    <center>
+        <img class="imgLogo" src="Imagenes/LogoYMascota/logo.png" alt="Logo">
+        <img class="imgButti" src="Imagenes/LogoYMascota/3.png" alt="Mascota Seguridad">
+        <h1>Ayudas - Módulo de Bitácora</h1>
+    </center>
+    <br>
+    <div class="container">
+        <h2>Bitácora de Auditoría del Sistema</h2>
+        <p>
+            El módulo de <strong>Bitácora</strong> es la herramienta de seguridad y auditoría encargada de registrar, almacenar y supervisar todas las actividades, transacciones y cambios realizados por los usuarios dentro de los distintos componentes del sistema. Proporciona una trazabilidad completa para fines de supervisión, control interno e investigaciones de seguridad.
+        </p>
+        <img class="imgVentanaMDI" src="Imagenes/Bitacora/Bitacora_general.png" alt="Vista General de Bitácora">
+        <br><br><br>
+
+        <h2>1. Consulta General y Búsqueda de Registros</h2>
+        <br>
+        <img class="imgVentana" src="Imagenes/Bitacora/Bitacora_busqueda.png" alt="Búsqueda de Registros">
+        <p>
+            En la parte superior de la ventana encontrarás la barra de <strong>Consulta General</strong>:
+        </p>
+        <p>
+            • <strong>Caja de texto de búsqueda:</strong> Permite ingresar cualquier criterio de búsqueda como: nombre de usuario (ej. <em>admin</em>), tipo de acción (ej. <em>INSERT</em>, <em>UPDATE</em>, <em>DELETE</em>, <em>LOGIN</em>), nombre de la tabla afectada (ej. <em>tbl_usuarios</em>), número correlativo de ID, dirección IP o fecha específica (formato <em>yyyy-MM-dd</em>).
+        </p>
+        <p>
+            • <strong>Botón "Buscar" (o tecla Enter):</strong> Al presionar este botón o pulsar la tecla <strong>Enter</strong> en el teclado, el sistema filtra y actualiza al instante la lista de registros en la grilla inferior según el criterio ingresado. Si dejas el campo vacío y presionas Buscar, se volverán a mostrar todos los registros disponibles.
+        </p>
+        <br><br>
+
+        <h2>2. Visualización de la Tabla de Registros</h2>
+        <br>
+        <img class="imgVentanaMDI" src="Imagenes/Bitacora/Bitacora_tabla.png" alt="Tabla de Registros de Bitácora">
+        <p>
+            La grilla principal presenta la información organizada en columnas claras y detalladas:
+        </p>
+        <p>
+            • <strong>ID:</strong> Número de identificación único y correlativo de cada registro de auditoría.<br>
+            • <strong>Usuario:</strong> Nombre de la cuenta de usuario que ejecutó la operación en el sistema.<br>
+            • <strong>Acción:</strong> Acción efectuada por el usuario (LOGIN, LOGOUT, INSERT, UPDATE, DELETE).<br>
+            • <strong>Tabla Afectada:</strong> Nombre de la entidad o tabla de la base de datos involucrada.<br>
+            • <strong>ID Registro:</strong> Clave primaria o identificador del registro afectado dentro de la tabla.<br>
+            • <strong>Detalles:</strong> Breve descripción o mensaje explicativo del movimiento realizado.<br>
+            • <strong>Dirección IP:</strong> Dirección IP de red del equipo cliente desde donde se generó la petición.<br>
+            • <strong>Fecha y Hora:</strong> Momento cronológico exacto en que se registró el evento.
+        </p>
+        <br><br>
+
+        <h2>3. Panel de Botones de Acción</h2>
+        <br>
+        <img class="imgVentana" src="Imagenes/Bitacora/Bitacora_acciones.png" alt="Botones de Acción">
+        <p>
+            En el costado derecho de la pantalla se ubica el panel con los 3 botones principales de operación:
+        </p>
+        <p>
+            • <strong>1. Botón Reportes (Ícono de Gráfica / Reporte):</strong><br>
+            Al hacer <strong>clic izquierdo</strong> sobre este botón, el sistema abre la ventana de <em>Reporte de Bitácora</em> mediante el visor de Microsoft ReportViewer. Desde allí podrás generar un informe imprimible con filtros avanzados, exportar los registros a formatos como PDF o Excel, o enviar directamente a una impresora conectada.
+        </p>
+        <p>
+            • <strong>2. Botón Ayuda (Ícono de Interrogación):</strong><br>
+            Al hacer <strong>clic izquierdo</strong> sobre este botón, el sistema detecta y abre de inmediato este manual interactivo en tu navegador web para resolver dudas sobre el funcionamiento y los controles de la bitácora.
+        </p>
+        <p>
+            • <strong>3. Botón Salir (Ícono de Puerta / Flecha):</strong><br>
+            Al hacer <strong>clic izquierdo</strong> sobre este botón, se cierra la ventana de Bitácora de manera segura y regresas al menú principal o MDI del sistema de Seguridad.
+        </p>
+        <br><br>
+    </div>
+</body>
+</html>

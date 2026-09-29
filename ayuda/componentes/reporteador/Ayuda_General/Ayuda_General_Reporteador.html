@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ayuda General - Reporteador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="portada">
+    <table class="tabla-portada">
+        <tr>
+            <td>
+                <img src="img/portada.png" alt="Portada Ayuda General Reporteador">
+            </td>
+        </tr>
+    </table>
+    <span class="numero-pagina">1</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Nómina del grupo</h1>
+        <table class="tabla-nomina">
+            <tr><th>Integrante</th><th>Carnet</th></tr>
+            <tr><td>Velveth Sarai Chavez Mejia</td><td>0901-23-6269</td></tr>
+            <tr><td>Nills Berducido Gomez</td><td>0901-23-14275</td></tr>
+            <tr><td>Brayan Moises Pinzon Lopez</td><td>0901-23-10511</td></tr>
+            <tr><td>Brian Andree De La Cruz Sosa</td><td>0901-23-6124</td></tr>
+            <tr><td>Gabriela Pinto Garcia</td><td>9959-23-1087</td></tr>
+            <tr><td>Carlos Eduardo Chin Caal</td><td>0901-23-5686</td></tr>
+            <tr><td>Jose Xavier Bolanos Tenas</td><td>0901-23-2128</td></tr>
+        </table>
+    </div>
+    <span class="numero-pagina">2</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Tabla de contenido</h1>
+        <table class="tabla-contenido">
+            <tr><td>Bienvenida</td><td>................................................</td><td>4</td></tr>
+            <tr><td>Vista general del Reporteador</td><td>................................................</td><td>5</td></tr>
+            <tr><td>Seleccionar ruta del reporte</td><td>................................................</td><td>6</td></tr>
+            <tr><td>Guardar un reporte</td><td>................................................</td><td>7</td></tr>
+            <tr><td>Modificar un reporte</td><td>................................................</td><td>8</td></tr>
+            <tr><td>Eliminar / deshabilitar un reporte</td><td>................................................</td><td>9</td></tr>
+            <tr><td>Limpiar reporte</td><td>................................................</td><td>10</td></tr>
+            <tr><td>Imprimir reporte</td><td>................................................</td><td>11</td></tr>
+            <tr><td>Buscar y aplicar filtros</td><td>................................................</td><td>12</td></tr>
+            <tr><td>Refrescar la información</td><td>................................................</td><td>13</td></tr>
+            <tr><td>Flujo general del programa</td><td>................................................</td><td>14</td></tr>
+        </table>
+    </div>
+    <span class="numero-pagina">3</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Bienvenida</h1>
+
+        <p>
+            Bienvenido a la ayuda general del módulo <b>Reporteador</b>.
+            Este manual reúne las funciones principales disponibles en la pantalla de reportes
+            y explica de forma sencilla cómo utilizarlas.
+        </p>
+
+        <p>
+            Desde este módulo es posible seleccionar la ruta de un archivo de reporte,
+            registrar nuevos reportes, modificar registros existentes, deshabilitarlos,
+            limpiar los campos del formulario, imprimir reportes, buscar información mediante
+            filtros y refrescar la tabla de resultados.
+        </p>
+
+        <div class="captura">
+            <img src="img/pantalla_general.png" alt="Pantalla general del Reporteador">
+        </div>
+    </div>
+    <span class="numero-pagina">4</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Vista general del Reporteador</h1>
+
+        <p>
+            La pantalla principal se divide en tres áreas. En la parte superior se encuentran
+            los campos <b>Ruta del reporte</b> y <b>Nombre del reporte</b>. Debajo se ubican
+            las acciones principales del módulo, y en la parte inferior se encuentra el área
+            de búsqueda junto con la tabla de reportes registrados.
+        </p>
+
+        <ul>
+            <li><b>Ruta del reporte:</b> permite seleccionar el archivo del reporte.</li>
+            <li><b>Nombre del reporte:</b> identifica el reporte dentro del sistema.</li>
+            <li><b>Tabla:</b> muestra número, nombre, ruta y fecha del reporte.</li>
+            <li><b>Área de búsqueda:</b> permite filtrar por nombre, fecha o ambos criterios.</li>
+        </ul>
+
+        <div class="captura">
+            <img src="img/pantalla_general.png" alt="Elementos principales del Reporteador">
+        </div>
+    </div>
+    <span class="numero-pagina">5</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Seleccionar ruta del reporte</h1>
+
+        <p>
+            El botón <b>Ruta del reporte</b> abre el explorador de archivos de Windows
+            para seleccionar un archivo de reporte con extensión <b>.rdlc</b>.
+        </p>
+
+        <div class="captura pequena">
+            <img src="img/ruta_explorador.png" alt="Explorador de archivos">
+        </div>
+
+        <h2>Confirmar la selección</h2>
+
+        <p>
+            Una vez seleccionado el archivo, se presiona <b>Abrir</b>.
+            El sistema carga automáticamente la ubicación del archivo en el campo
+            Ruta del reporte.
+        </p>
+
+        <div class="captura pequena">
+            <img src="img/ruta_resultado.png" alt="Ruta cargada en el formulario">
+        </div>
+    </div>
+    <span class="numero-pagina">6</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Guardar un reporte</h1>
+
+        <p>
+            Para registrar un nuevo reporte deben estar completos los campos
+            <b>Ruta del reporte</b> y <b>Nombre del reporte</b>.
+        </p>
+
+        <div class="captura pequena">
+            <img src="img/guardar_campos.png" alt="Datos del reporte completos">
+        </div>
+
+        <p>
+            Al presionar <b>Guardar</b>, el sistema registra la información y muestra
+            un mensaje indicando que la operación se realizó correctamente.
+        </p>
+
+        <div class="captura pequena">
+            <img src="img/guardar_exito.png" alt="Mensaje de guardado exitoso">
+        </div>
+    </div>
+    <span class="numero-pagina">7</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Modificar un reporte</h1>
+
+        <p>
+            Para modificar un reporte primero se selecciona su fila en la tabla y luego
+            se presiona el botón <b>Modificar</b>. Los datos del registro seleccionado
+            se cargan nuevamente en los campos del formulario.
+        </p>
+
+        <div class="captura pequena">
+            <img src="img/modificar.png" alt="Botón Modificar">
+        </div>
+
+        <p>
+            Después de cambiar el nombre o la ruta, se utiliza <b>Guardar</b> para
+            actualizar el registro. El sistema refresca la tabla para mostrar los
+            nuevos datos.
+        </p>
+
+        <div class="captura pequena">
+            <img src="img/editar_flujo.png" alt="Flujo de modificación">
+        </div>
+    </div>
+    <span class="numero-pagina">8</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Eliminar o deshabilitar un reporte</h1>
+
+        <p>
+            La acción <b>Eliminar</b> se utiliza para deshabilitar un reporte seleccionado.
+            El registro no se borra físicamente de la base de datos; queda marcado como
+            inactivo para conservar la información registrada.
+        </p>
+
+        <div class="captura pequena">
+            <img src="img/eliminar.png" alt="Botón Eliminar">
+        </div>
+
+        <p>
+            Antes de completar la acción, el sistema solicita confirmación.
+            Si se confirma, el reporte queda deshabilitado y deja de estar disponible
+            para las operaciones que correspondan.
+        </p>
+    </div>
+    <span class="numero-pagina">9</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Limpiar reporte</h1>
+
+        <p>
+            El botón <b>Limpiar Reporte</b> permite limpiar los datos que se encuentran
+            actualmente en los campos del formulario y dejar la pantalla lista para
+            realizar una nueva operación.
+        </p>
+
+        <div class="captura">
+            <img src="img/limpiar.png" alt="Botón Limpiar Reporte">
+        </div>
+
+        <p>
+            Esta acción es útil cuando se desea cancelar la información que se estaba
+            ingresando o comenzar el registro de un nuevo reporte sin conservar datos
+            anteriores en los campos.
+        </p>
+    </div>
+    <span class="numero-pagina">10</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Imprimir reporte</h1>
+
+        <p>
+            El botón <b>Imprimir</b> trabaja con el reporte seleccionado en la tabla.
+            El sistema obtiene la ruta asociada al registro y utiliza el componente de
+            impresión para enviar el archivo correspondiente a la impresión.
+        </p>
+
+        <div class="captura">
+            <img src="img/imprimir.png" alt="Botón Imprimir">
+        </div>
+
+        <p>
+            Para utilizar esta función debe existir un reporte seleccionado y una ruta
+            válida asociada al archivo del reporte.
+        </p>
+    </div>
+    <span class="numero-pagina">11</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Buscar y aplicar filtros</h1>
+
+        <p>
+            El Reporteador permite buscar registros utilizando el nombre del reporte,
+            la fecha del reporte o ambos criterios al mismo tiempo.
+        </p>
+
+        <h2>Filtro por nombre</h2>
+        <div class="captura pequena">
+            <img src="img/filtro_nombre.png" alt="Filtro por nombre">
+        </div>
+
+        <h2>Filtro por fecha</h2>
+        <div class="captura pequena">
+            <img src="img/filtro_fecha.png" alt="Filtro por fecha">
+        </div>
+
+        <p>
+            Después de ingresar los criterios se presiona <b>Aplicar Filtro</b> y la tabla
+            muestra únicamente los registros que cumplen las condiciones seleccionadas.
+        </p>
+    </div>
+    <span class="numero-pagina">12</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Refrescar la información</h1>
+
+        <p>
+            El botón <b>Refrescar</b> vuelve a cargar la información de la tabla para
+            mostrar el estado actual de los reportes.
+        </p>
+
+        <div class="captura">
+            <img src="img/refrescar.png" alt="Botón Refrescar">
+        </div>
+
+        <p>
+            Puede utilizarse después de realizar cambios o búsquedas para recuperar la
+            vista actualizada de los registros.
+        </p>
+    </div>
+    <span class="numero-pagina">13</span>
+</div>
+
+<div class="pagina">
+    <div class="contenido">
+        <h1 class="titulo">Flujo general del programa</h1>
+
+        <div class="flujo">
+            <div class="paso">1. Seleccionar la ruta del reporte</div>
+            <div class="flecha">↓</div>
+            <div class="paso">2. Ingresar el nombre del reporte</div>
+            <div class="flecha">↓</div>
+            <div class="paso">3. Guardar el nuevo registro</div>
+            <div class="flecha">↓</div>
+            <div class="paso">4. Consultar el reporte en la tabla</div>
+            <div class="flecha">↓</div>
+            <div class="paso">5. Modificar, imprimir o deshabilitar según sea necesario</div>
+            <div class="flecha">↓</div>
+            <div class="paso">6. Buscar registros mediante los filtros</div>
+            <div class="flecha">↓</div>
+            <div class="paso">7. Refrescar la tabla para actualizar la información</div>
+        </div>
+
+        <p class="texto-final">
+            Con estas funciones, el módulo Reporteador permite administrar los reportes
+            desde una sola pantalla y mantener organizada la información necesaria para
+            trabajar con ellos dentro del sistema.
+        </p>
+    </div>
+    <span class="numero-pagina">14</span>
+</div>
+
+</body>
+</html>

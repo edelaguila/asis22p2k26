@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <title>Consulta Compleja - Ayuda</title>
+    <style>
+        .ayuda-intro { margin-bottom: 18px; }
+        .pasos { margin: 12px 0 22px 22px; line-height: 1.6; }
+        .tabla-ayuda { width: 100%; border-collapse: collapse; margin: 14px 0 24px; }
+        .tabla-ayuda th { background: #2E4A63; color: white; text-align: left; padding: 10px; }
+        .tabla-ayuda td { border: 1px solid #d8d0c2; padding: 10px; vertical-align: top; }
+        .tabla-ayuda tr:nth-child(even) td { background: #f7f3eb; }
+        .nota { background: #EDE7DA; border-left: 5px solid #C4573F; padding: 12px 14px; margin: 16px 0; }
+        .captura { max-width: 100%; height: auto; }
+        kbd { background: #2E4A63; color: white; padding: 2px 6px; border-radius: 4px; font-family: inherit; }
+    </style>
+</head>
+<body>
+    <div class="encabezado">
+        <img class="logo" src="img/LogoConsultas.png" alt="Consultas">
+        <h1>Capacitación - Consultas</h1>
+        <p class="subtitulo">Uso de consultas complejas y consultas reutilizables</p>
+    </div>
+
+    <div class="container">
+        <div class="seccion">
+            <h2>Consulta compleja</h2>
+            <p class="ayuda-intro">
+                Esta pantalla permite localizar, consultar, crear y administrar consultas guardadas.
+                La tabla central muestra las consultas disponibles y la lista del lado izquierdo facilita
+                la selección de una consulta reutilizable.
+            </p>
+
+            <img class="captura" src="img/ConsultaCompleja.png" alt="Pantalla de consultas complejas">
+
+            <h2>Cómo utilizar la pantalla</h2>
+            <ol class="pasos">
+                <li>Revise la lista <strong>Seleccione una consulta</strong> y haga clic sobre la consulta que desea utilizar.</li>
+                <li>Presione <strong>Consultar</strong> para ejecutar o abrir la consulta seleccionada.</li>
+                <li>Si necesita crear una consulta diferente, presione <strong>Nueva Consulta</strong>.</li>
+                <li>Use la tabla central para revisar las consultas registradas, su tabla de origen, consulta SQL y fechas de creación o actualización.</li>
+                <li>Cuando existan muchos registros, utilice <strong>Anterior</strong>, <strong>Siguiente</strong> o los números de página para desplazarse.</li>
+            </ol>
+
+            <h2>Botones y controles</h2>
+            <table class="tabla-ayuda">
+                <thead>
+                    <tr><th>Botón o control</th><th>Función</th><th>Cómo usarlo</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Consultar</strong></td>
+                        <td>Abre o ejecuta la consulta seleccionada.</td>
+                        <td>Seleccione primero una consulta en la lista de la izquierda y luego presione el botón.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nueva Consulta</strong></td>
+                        <td>Abre la pantalla de mantenimiento para construir y guardar una nueva consulta.</td>
+                        <td>Úselo cuando la consulta que necesita todavía no existe.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Eliminar</strong></td>
+                        <td>Elimina la consulta guardada que esté seleccionada.</td>
+                        <td>Seleccione la consulta y confirme la eliminación cuando el sistema lo solicite.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Refrescar</strong></td>
+                        <td>Vuelve a cargar la información mostrada en pantalla.</td>
+                        <td>Úselo después de crear, modificar o eliminar una consulta, o cuando desee actualizar el listado.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ayuda</strong></td>
+                        <td>Muestra este manual de uso.</td>
+                        <td>Presiónelo cuando necesite recordar la función de los controles de la pantalla.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Inicio</strong></td>
+                        <td>Regresa a la pantalla principal del componente de Consultas.</td>
+                        <td>Úselo para salir de esta función sin cerrar completamente el módulo.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Salir</strong></td>
+                        <td>Cierra la ventana actual.</td>
+                        <td>Presiónelo cuando haya terminado de trabajar en esta pantalla.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anterior / Siguiente / páginas</strong></td>
+                        <td>Permiten desplazarse entre páginas de resultados.</td>
+                        <td>Úselos cuando la cantidad de consultas sea mayor que la cantidad visible en una sola página.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="nota">
+                <strong>Importante:</strong> antes de usar <strong>Consultar</strong> o <strong>Eliminar</strong>, verifique que la consulta correcta esté seleccionada.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

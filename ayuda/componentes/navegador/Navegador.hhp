@@ -1,0 +1,46 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Navegador.chm
+Contents file=html\Navegador.hhc
+Default Window=Ayudas Componente Navegador
+Default topic=html\00_inicio.html
+Display compile progress=Yes
+Language=0x100a Spanish (Guatemala)
+Title=Ayudas de Componente Navegador
+
+[WINDOWS]
+Ayudas Componente Navegador="Ayuda de uso Componente Navegador","html\Navegador.hhc",,"html\00_inicio.html","html\00_inicio.html","html\02_conexion.html","Conexion","html\06_crud.html","CRUD",0x23520,,0xc387e,,,,,,,,0
+
+[FILES]
+html\00_inicio.html
+html\01_requisitos_compilar.html
+html\02_conexion.html
+html\03_integrar.html
+html\04_configurar_tabla.html
+html\05_ejecutar.html
+html\06_crud.html
+html\07_botones.html
+html\08_errores.html
+css\estilos.css
+imagenes\logo_navegador.jpg
+imagenes\manual\01_formulario_configuracion.png
+imagenes\manual\02_metodo_configuracion.png
+imagenes\manual\03_propiedad_nombre_tabla.png
+imagenes\manual\04_lectura_esquema.png
+imagenes\manual\05_crud_cuadricula.png
+imagenes\manual\08_autoincremento.png
+imagenes\manual\09_formulario_nuevo.png
+imagenes\manual\10_conexion_odbc_codigo.png
+imagenes\manual\11_configuracion_odbc.png
+imagenes\manual\12_codigo_consultar.png
+imagenes\manual\14_confirmacion_ingreso.png
+imagenes\manual\15_registro_guardado.png
+imagenes\manual\17_formulario_modificar.png
+imagenes\manual\20_cableado_botones.png
+imagenes\manual\21_cuadricula_botones.png
+imagenes\manual\22_permisos_botones.png
+imagenes\manual\23_formulario_ingresar.png
+imagenes\manual\25_acceso_modulo_denegado.png
+imagenes\manual\26_formulario_sin_permisos.png
+
+[INFOTYPES]
