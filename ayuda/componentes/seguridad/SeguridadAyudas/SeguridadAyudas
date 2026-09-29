@@ -1,0 +1,28 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\..\..\..\..\..\Embutidos S.chm
+Contents file=SeguridaAyudas
+Default Window=SeguridadAyudas
+Default topic=Aplicaciones_Seguridad.html
+Display compile progress=No
+Language=0x100a Español (Guatemala)
+
+[WINDOWS]
+SeguridadAyudas="Ayudas brindadas por parte del componente de Seguridad.","SeguridaAyudas",,"MDI_Seguridad.html","MDI_Seguridad.html","Bitacora_Seguridad.html","Bitacora_Seguridad","Recuperacion_Seguridad.html","Recuperacion_Seguridad",0x23520,,0xc387e,,,,,,,,0
+
+
+[FILES]
+Aplicaciones_Seguridad.html
+AsigAplPerfiles_Seguridad.html
+AsigAplUsarios_Seguridad.html
+AsigPerfiles_Seguridad.html
+Bitacora_Seguridad.html
+Empleados_Seguridad.html
+MDI_Seguridad.html
+Módulos_Seguridad.html
+Perfiles_Seguridad.html
+Recuperacion_Seguridad.html
+Usuarios_Seguridad.html
+
+[INFOTYPES]
+
