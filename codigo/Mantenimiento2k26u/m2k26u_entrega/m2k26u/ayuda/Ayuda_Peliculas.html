@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Ayuda — Mantenimiento de Películas</title>
+<style>
+  body { font-family: "Segoe UI", Tahoma, sans-serif; font-size: 14px; line-height: 1.6;
+         color: #1A2733; background: #EDE7DA; margin: 0; padding: 24px; }
+  .hoja { max-width: 820px; margin: 0 auto; background: #FFFFFF; padding: 28px 34px;
+          border: 1px solid #D7DEE5; }
+  h1 { font-family: Tahoma, sans-serif; font-size: 22px; color: #2E4A63; margin: 0 0 4px; }
+  h2 { font-family: Tahoma, sans-serif; font-size: 16px; color: #2E4A63;
+       border-bottom: 2px solid #4E8078; padding-bottom: 4px; margin-top: 28px; }
+  .sub { color: #5E7183; margin: 0 0 20px; font-size: 13px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; }
+  th { background: #2E4A63; color: #FFFFFF; text-align: left; padding: 7px 10px; }
+  td { border-bottom: 1px solid #D7DEE5; padding: 7px 10px; vertical-align: top; }
+  .aviso { background: #FBF0EC; border-left: 4px solid #C4573F; padding: 10px 14px; margin: 14px 0; }
+  .ok { background: #EDF4F2; border-left: 4px solid #4E8078; padding: 10px 14px; margin: 14px 0; }
+  code { background: #EDF1F5; border: 1px solid #D7DEE5; padding: 1px 4px; font-family: Consolas, monospace; }
+  footer { margin-top: 30px; padding-top: 12px; border-top: 1px solid #D7DEE5;
+           color: #5E7183; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="hoja">
+
+<h1>Mantenimiento de Películas</h1>
+<p class="sub">Formulario 4100 &middot; Módulo Catálogos &middot; Aplicación Películas &middot; Sistema Embutidos de Calidad, S.A.</p>
+
+<h2>Qué hace este formulario</h2>
+<p>Administra el catálogo de películas: permite dar de alta, consultar, modificar y eliminar
+registros, y generar el reporte impreso del catálogo completo. Cada una de esas cinco acciones
+queda registrada en la bitácora del sistema de Seguridad con el usuario que la ejecutó, la fecha,
+la hora y la dirección IP del equipo.</p>
+
+<h2>Antes de empezar</h2>
+<div class="aviso">
+<strong>Necesita haber iniciado sesión.</strong> El formulario toma el usuario de la sesión que
+crea el Login de Seguridad. Sin sesión activa, los botones aparecen deshabilitados y las acciones
+no se pueden registrar en la bitácora.
+</div>
+
+<h2>Los campos</h2>
+<table>
+  <tr><th>Campo</th><th>Obligatorio</th><th>Descripción</th></tr>
+  <tr><td>Id</td><td>No</td><td>Lo asigna la base de datos. No se puede escribir.</td></tr>
+  <tr><td>Nombre</td><td>Sí</td><td>Hasta 45 caracteres. No se puede repetir: dos películas no pueden llamarse igual.</td></tr>
+  <tr><td>Clasificación</td><td>Sí</td><td>A, B, B-15, C o D. La lista sugiere valores pero admite escribir otro.</td></tr>
+  <tr><td>Género</td><td>Sí</td><td>Acción, Animación, Ciencia ficción, Comedia, Documental, Drama, Romance, Suspenso o Terror.</td></tr>
+  <tr><td>Subtitulado</td><td>Sí</td><td>Sí o No.</td></tr>
+  <tr><td>Idioma</td><td>Sí</td><td>Idioma original o de doblaje.</td></tr>
+  <tr><td>Precio</td><td>Sí</td><td>Valor numérico, no negativo. Acepta coma o punto decimal según la configuración del equipo.</td></tr>
+  <tr><td>Película activa</td><td>—</td><td>Desmarcada, la película queda inactiva sin borrarse del catálogo.</td></tr>
+</table>
+
+<h2>Cómo registrar una película nueva</h2>
+<ol>
+  <li>Pulse <strong>Ingresar</strong>. Los campos se habilitan y quedan vacíos.</li>
+  <li>Escriba los datos. El Id se deja en blanco: lo asigna el sistema.</li>
+  <li>Pulse <strong>Guardar</strong>. Si algún dato falta o está mal, el sistema lo indica y no graba nada.</li>
+</ol>
+
+<h2>Cómo modificar una película</h2>
+<ol>
+  <li>Selecciónela en la tabla, o navegue hasta ella con los botones de desplazamiento.</li>
+  <li>Pulse <strong>Modificar</strong>. Los campos se habilitan con los datos actuales.</li>
+  <li>Cambie lo que necesite y pulse <strong>Guardar</strong>.</li>
+</ol>
+
+<h2>Cómo eliminar una película</h2>
+<ol>
+  <li>Selecciónela en la tabla.</li>
+  <li>Pulse <strong>Eliminar</strong> y confirme en el mensaje.</li>
+</ol>
+<div class="aviso">
+La eliminación es definitiva y no se puede deshacer. Si lo que quiere es retirarla del catálogo
+sin perder su historial, use <strong>Modificar</strong> y desmarque <em>Película activa</em>.
+</div>
+
+<h2>Cómo consultar</h2>
+<p>Pulse <strong>Consultar</strong> y escriba el nombre o parte del nombre de la película. Deje el
+cuadro vacío para volver a ver el catálogo completo. La búsqueda no distingue mayúsculas y encuentra
+el texto en cualquier posición del nombre.</p>
+<div class="ok">
+Si escribe caracteres como <code>%</code> o <code>_</code>, el sistema los busca literalmente;
+no funcionan como comodines.
+</div>
+
+<h2>Cómo generar el reporte</h2>
+<p>Pulse <strong>Imprimir</strong>. Se abre el visor con el catálogo completo ordenado por nombre.
+Desde la barra del visor puede imprimirlo o exportarlo a PDF, Excel o Word.</p>
+
+<h2>Los botones de desplazamiento</h2>
+<table>
+  <tr><th>Botón</th><th>Qué hace</th></tr>
+  <tr><td>|&lt; Inicio</td><td>Va al primer registro.</td></tr>
+  <tr><td>&lt; Anterior</td><td>Retrocede un registro.</td></tr>
+  <tr><td>Siguiente &gt;</td><td>Avanza un registro.</td></tr>
+  <tr><td>Fin &gt;|</td><td>Va al último registro.</td></tr>
+</table>
+<p>El contador bajo la tabla indica en qué posición está y cuántos registros hay en total.</p>
+
+<h2>Por qué hay botones apagados</h2>
+<p>Los botones Ingresar, Modificar, Eliminar e Imprimir dependen de los permisos del perfil con el
+que inició sesión. Un perfil Supervisor, por ejemplo, puede ingresar y modificar películas pero no
+eliminarlas, y verá ese botón en gris. Si necesita un permiso que no tiene, solicítelo al
+administrador del sistema.</p>
+
+<h2>Mensajes frecuentes</h2>
+<table>
+  <tr><th>Mensaje</th><th>Qué significa</th></tr>
+  <tr><td>Ya existe una película registrada con ese nombre</td><td>El nombre no se puede repetir. Use uno distinto o modifique la película que ya existe.</td></tr>
+  <tr><td>El precio no es un número válido</td><td>Escriba solo cifras y un separador decimal, por ejemplo 45.50</td></tr>
+  <tr><td>No hay una sesión activa</td><td>Cierre el formulario, inicie sesión en Seguridad y vuelva a abrirlo.</td></tr>
+  <tr><td>La operación se realizó, pero NO se pudo registrar en la bitácora</td><td>Los datos sí se guardaron. Avise al administrador: la bitácora quedó incompleta.</td></tr>
+</table>
+
+<p>Pulse <strong>F1</strong> en cualquier momento para volver a abrir esta ayuda.</p>
+
+<footer>
+Mantenimiento2k26u &middot; José Pablo Cano Cóbar &middot; Carné 0901-23-1727<br>
+Análisis de Sistemas II &middot; Universidad Mariano Gálvez de Guatemala &middot; Ing. Esduardo del Águila
+</footer>
+
+</div>
+</body>
+</html>

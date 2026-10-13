@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ==================================================================
+  Área   : Mantenimiento2k26u
+  Autor  : José Pablo Cano Cóbar
+  Carné  : 0901-23-1727
+  Fecha  : 13/10/2026
+  ==================================================================
+  SeguridadRaiz apunta a la carpeta codigo\componentes\seguridad\Seguridad
+  del repositorio. El valor por omisión asume que este proyecto vive en
+  codigo\componentes\mantenimiento2k26u\Mantenimiento2k26u\<Proyecto>\
+  Si la estructura es otra, se cambia AQUÍ una sola vez, no en cada
+  referencia, o se pasa por línea de comandos:
+      msbuild /p:SeguridadRaiz=C:\ruta\seguridad\Seguridad
+  ==================================================================
+-->
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <SeguridadRaiz Condition="'$(SeguridadRaiz)' == ''">..\..\..\seguridad\Seguridad</SeguridadRaiz>
+    <NavegadorRaiz Condition="'$(NavegadorRaiz)' == ''">..\..\..\navegador\Navegador</NavegadorRaiz>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1B2C3D4-0001-4E5F-9A01-0901231727AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaModelo_Mantenimiento2k26u</RootNamespace>
+    <AssemblyName>CapaModelo_Mantenimiento2k26u</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="CapaModelo_Seguridad">
+      <HintPath>$(SeguridadRaiz)\CapaModelo_Seguridad\bin\Debug\CapaModelo_Seguridad.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\ClsPelicula.cs" />
+    <Compile Include="Contratos\IRepositorioPelicula.cs" />
+    <Compile Include="Repositorios\ClsRepositorioPelicula.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
